@@ -1,0 +1,18 @@
+@mixin border($colour:$primary-color) {
+    border: .1rem solid $colour;
+}
+
+@mixin btn {
+    padding: 15px;
+    @include border;
+    color: $primary-color;
+    background: $secondary-color;
+    cursor: pointer;
+    &:hover{
+        background: $primary-color;
+    }
+    &--full-width {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
