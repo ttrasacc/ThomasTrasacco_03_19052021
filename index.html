@@ -1,47 +1,48 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="./public/css/style.css">
+    <script src="https://kit.fontawesome.com/fc82092fd5.js" crossorigin="anonymous"></script>
 </head>
 <body class="page"> 
     <header class="page__header">
-        <h1>ohmyfood</h1>
+        <img class="name-logo" src="public/images/ohmyfood.png">
     </header>
     <div class="location">
-        <mat-icon></mat-icon>
-        <p>
-            Paris, Belleville
-        </p>
+        <div class="location__logo">
+            <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <p>Paris, Belleville</p>
     </div>
     <section class="intro">
-        <h1>Réservez le menu qui vous convient</h1>
-        <h2>Découvrez des restaurants d'exception, sélectionnés par nos soins</h2>
-        <button type="button" class="btn">Explorer nos restaurants</button>
+        <div class="text-container">
+            <h1>Réservez le menu qui</h1>
+            <h1>vous convient</h1>
+        </div>
+        <div class="text-container">
+            <h2>Découvrez des restaurants d'exception,</h2>
+            <h2>sélectionnés par nos soins</h2>
+        </div>
+        <button type="button" class="btn"><h2>Explorer nos restaurants</h2></button>
     </section>
     <section class="steps-container">
-        <header class="steps-container__header">
+        <header>
             <h1>Fonctionnement</h1>
         </header>
-        <div class="steps-regrouper">
-            <div class="steps-regrouper__step">
-                <p>1</p>
-                <div>
-                    <mat-icon></mat-icon>
-                    <p>Choisissez un restaurant</p>
-                </div>
+        <div class="steps-container__regrouper">
+            <div class="scr-step">
+                <p class="scr-step__number">1</p>
+                <i class="fas fa-mobile-alt fa-2x relative-pos"></i>
+                <p class="scr-step__label">Choisissez un restaurant</p>
             </div>
-            <div class="steps-regrouper__step">
-                <p>2</p>
-                <div>
-                    <mat-icon></mat-icon>
-                    <p>Composez votre menu</p>
-                </div>
+            <div class="scr-step">
+                <p class="scr-step__number">2</p>
+                <i class="fas fa-bars fa-2x relative-pos"></i>
+                <p class="scr-step__label">Composez votre menu</p>
             </div>
-            <div class="steps-regrouper__step steps-regrouper__step--purple">
-                <p>3</p>
-                <div>
-                    <mat-icon></mat-icon>
-                    <p>Dégustez au restaurant</p>
-                </div>
+            <div class="scr-step scr-step--colored">
+                <p class="scr-step__number">3</p>
+                <i class="fas fa-store fa-2x relative-pos"></i>
+                <p class="scr-step__label">Dégustez au restaurant</p>
             </div>
         </div>
     </section>
@@ -51,44 +52,48 @@
         </header>
         <div class="restos-regrouper">
             <div class="restos-regrouper__resto">
-                <div>
-                    <h2>La palette du goût</h2>
+                <div class="rrr__image" id="id_1"></div>
+                <div class="rrr__labels">
+                    <h2 class="bold">La palette du goût</h2>
                     <p>Ménilmontant</p>
                 </div>
-                <div>
+                <div class="rrr__favorite_icon">
                     <mat-icon></mat-icon>
                 </div>
             </div>
             <div class="restos-regrouper__resto">
-                <div>
-                    <h2>La note enchantée</h2>
+                <div class="rrr__image" id="id_1"></div>
+                <div class="rrr__labels">
+                    <h2 class="bold">La note enchantée</h2>
                     <p>Charonne</p>
                 </div>
-                <div>
+                <div class="rrr__favorite_icon">
                     <mat-icon></mat-icon>
                 </div>
             </div>
             <div class="restos-regrouper__resto">
-                <div>
-                    <h2>A la française</h2>
+                <div class="rrr__image" id="id_1"></div>
+                <div class="rrr__labels">
+                    <h2 class="bold">A la française</h2>
                     <p>Cité Rouge</p>
                 </div>
-                <div>
+                <div class="rrr__favorite_icon">
                     <mat-icon></mat-icon>
                 </div>
             </div>
             <div class="restos-regrouper__resto">
-                <div>
-                    <h2>Le délice des sens</h2>
+                <div class="rrr__image" id="id_1"></div>
+                <div class="rrr__labels">
+                    <h2 class="bold">Le délice des sens</h2>
                     <p>Folie-Méricourt</p>
                 </div>
-                <div>
+                <div class="rrr__favorite_icon">
                     <mat-icon></mat-icon>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="page__footer">
+    <footer class="footer">
         <header class="footer__header">
             <h1>
                 ohmyfood

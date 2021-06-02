@@ -1,11 +1,27 @@
+@mixin column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin column-start {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
 @mixin border($colour:$primary-color) {
     border: .1rem solid $colour;
+    border-radius: 50px;
 }
 
 @mixin btn {
-    padding: 15px;
+    padding: 25px 40px 25px 40px;
+    letter-spacing: 1px;
     @include border;
-    color: $primary-color;
+    color: whitesmoke;
     background: $secondary-color;
     cursor: pointer;
     &:hover{
