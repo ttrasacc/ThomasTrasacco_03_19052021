@@ -24,9 +24,6 @@
     color: whitesmoke;
     background: $secondary-color;
     cursor: pointer;
-    &:hover{
-        background: $primary-color;
-    }
     &--full-width {
         width: 100%;
         margin: 0 auto;

@@ -26,6 +26,18 @@
     .btn {
         @include btn;
         margin-top: 25px;
+        box-shadow: 1px 1px 12px #555;
+        &:active {
+            box-shadow: none;
+        }
+    }
+    .gradient {
+        background: rgb(174,113,200);
+        background: linear-gradient(0deg, rgba(174,113,200,1) 53%, rgba(242,108,233,1) 100%);
+        &:hover {
+            background: rgba(242,108,233,1);
+            background: linear-gradient(0deg, rgba(242,108,233,1) 53%, rgba(174,113,200,1) 100%);
+        }
     }
 }
 
@@ -136,6 +148,18 @@
     &__favorite-icon {
         margin-right: 50px;
     }
+}
+
+.fas {
+    display: none !important;
+}
+
+#favorite:checked ~ .far {
+   display: none;
+}
+
+#favorite:checked ~ .fas {
+    display: inline-block;
 }
 
 .footer {

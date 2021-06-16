@@ -5,13 +5,17 @@
     padding: 0;
     box-sizing: inherit;
 }
-
+*:focus {
+    outline: none;
+    border: none;
+}
 html {
     // 10px div by def of 16px
     font-size: 62.5%;
 }
 
 body {
+    outline: none;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
