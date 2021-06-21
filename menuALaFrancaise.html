@@ -1,204 +1,163 @@
-<div>
-    <header>
+<head>
+    <link rel="stylesheet" href="./public/css/style.css">
+    <script src="https://kit.fontawesome.com/fc82092fd5.js" crossorigin="anonymous"></script>
+</head>
+<body class="page">
+    <header class="page__header">
         <img class="name-logo" src="public/images/ohmyfood.png">
-        <mat-icon></mat-icon>
     </header>
-    <section #image></section>
-    <section #menu>
+    <section class="image" id="id_3"></section>
+    <section id="menu">
         <header>
             <h1>A la francaise</h1>
-            <mat-icon></mat-icon>
+            <input type="checkbox" id="favorite1">
+            <label for="favorite1"><i class="far fa-heart fa-3x not-checked"></i></label>
+            <label for="favorite1"><i class="fas fa-heart fa-3x checked"></i></label>
         </header>
-        <section #entrées>
+        <section id="entrees">
             <header>
                 <h1>ENTRÉES</h1>
             </header>
-            <div #card>
-                <div #visible>
-                    <div>
-                        <h1>Tartare de poulpe acidulé</h1>
-                        <h2>Aux zestes d'orange</h2>
-                    </div>
-                    <div>
-                        <p>25€</p>
-                    </div>
+            <div id="entrees__1">
+                <div class="description">
+                    <h1>Tartare de poulpe acidulé</h1>
+                    <h2>Aux zestes d'orange</h2>
                 </div>
-                <div #hidden>
-                    <button>
-                        <mat-icon></mat-icon>
-                    </button>
+                <div class="price">
+                    <p>25€</p>
+                </div>
+                <div class="hidden">
+                    <i class="fas fa-check-circle icon"></i>
                 </div>
             </div>
-            <div #card>
-                <div #visible>
-                    <div>
-                        <h1>Tartare de poulpe acidulé</h1>
-                        <h2>Aux zestes d'orange</h2>
-                    </div>
-                    <div>
-                        <p>25€</p>
-                    </div>
+            <div id="entrees__2">
+                <div class="description">
+                    <h1>Tartare de poulpe acidulé</h1>
+                    <h2>Aux zestes d'orange</h2>
                 </div>
-                <div #hidden>
-                    <button>
-                        <mat-icon></mat-icon>
-                    </button>
+                <div class="price">
+                    <p>25€</p>
+                </div>
+                <div class="hidden">
+                    <i class="fas fa-check-circle icon"></i>
                 </div>
             </div>
-            <div #card>
-                <div #visible>
-                    <div>
-                        <h1>Tartare de poulpe acidulé</h1>
-                        <h2>Aux zestes d'orange</h2>
-                    </div>
-                    <div>
-                        <p>25€</p>
-                    </div>
+            <div id="entrees__3">
+                <div class="description">
+                    <h1>Tartare de poulpe acidulé</h1>
+                    <h2>Aux zestes d'orange</h2>
                 </div>
-                <div #hidden>
-                    <button>
-                        <mat-icon></mat-icon>
-                    </button>
+                <div class="price">
+                    <p>25€</p>
+                </div>
+                <div class="hidden">
+                    <i class="fas fa-check-circle icon"></i>
                 </div>
             </div>
         </section>
-        <section #plats>
+        <section id="dishes">
             <header>
                 <h1>PLATS</h1>
             </header>
-            <div #card>
-                <div #visible>
-                    <div>
-                        <h1>Tartare de poulpe acidulé</h1>
-                        <h2>Aux zestes d'orange</h2>
-                    </div>
-                    <div>
-                        <p>25€</p>
-                    </div>
+            <div id="dishes__1">
+                <div class="description">
+                    <h1>Tartare de poulpe acidulé</h1>
+                    <h2>Aux zestes d'orange</h2>
                 </div>
-                <div #hidden>
-                    <button>
-                        <mat-icon></mat-icon>
-                    </button>
+                <div class="price">
+                    <p>25€</p>
+                </div>
+                <div class="hidden">
+                    <i class="fas fa-check-circle icon"></i>
                 </div>
             </div>
-            <div #card>
-                <div #visible>
-                    <div>
-                        <h1>Tartare de poulpe acidulé</h1>
-                        <h2>Aux zestes d'orange</h2>
-                    </div>
-                    <div>
-                        <p>25€</p>
-                    </div>
+            <div id="dishes__2">
+                <div class="description">
+                    <h1>Tartare de poulpe acidulé</h1>
+                    <h2>Aux zestes d'orange</h2>
                 </div>
-                <div #hidden>
-                    <button>
-                        <mat-icon></mat-icon>
-                    </button>
+                <div class="price">
+                    <p>25€</p>
+                </div>
+                <div class="hidden">
+                    <i class="fas fa-check-circle icon"></i>
                 </div>
             </div>
-            <div #card>
-                <div #visible>
-                    <div>
-                        <h1>Tartare de poulpe acidulé</h1>
-                        <h2>Aux zestes d'orange</h2>
-                    </div>
-                    <div>
-                        <p>25€</p>
-                    </div>
+            <div id="dishes__3">
+                <div class="description">
+                    <h1>Tartare de poulpe acidulé</h1>
+                    <h2>Aux zestes d'orange</h2>
                 </div>
-                <div #hidden>
-                    <button>
-                        <mat-icon></mat-icon>
-                    </button>
+                <div class="price">
+                    <p>25€</p>
+                </div>
+                <div class="hidden">
+                    <i class="fas fa-check-circle icon"></i>
                 </div>
             </div>
         </section>
-        <section #desserts>
+        <section id="desserts">
             <header>
                 <h1>DESSERTS</h1>
             </header>
-            <div #card>
-                <div #visible>
-                    <div>
-                        <h1>Tartare de poulpe acidulé</h1>
-                        <h2>Aux zestes d'orange</h2>
-                    </div>
-                    <div>
-                        <p>25€</p>
-                    </div>
+            <div id="desserts__1">
+                <div class="description">
+                    <h1>Tartare de poulpe acidulé</h1>
+                    <h2>Aux zestes d'orange</h2>
                 </div>
-                <div #hidden>
-                    <button>
-                        <mat-icon></mat-icon>
-                    </button>
+                <div class="price">
+                    <p>25€</p>
+                </div>
+                <div class="hidden">
+                    <i class="fas fa-check-circle icon"></i>
                 </div>
             </div>
-            <div #card>
-                <div #visible>
-                    <div>
-                        <h1>Tartare de poulpe acidulé</h1>
-                        <h2>Aux zestes d'orange</h2>
-                    </div>
-                    <div>
-                        <p>25€</p>
-                    </div>
+            <div id="desserts__2">
+                <div class="description">
+                    <h1>Tartare de poulpe acidulé</h1>
+                    <h2>Aux zestes d'orange</h2>
                 </div>
-                <div #hidden>
-                    <button>
-                        <mat-icon></mat-icon>
-                    </button>
+                <div class="price">
+                    <p>25€</p>
+                </div>
+                <div class="hidden">
+                    <i class="fas fa-check-circle icon"></i>
                 </div>
             </div>
-            <div #card>
-                <div #visible>
-                    <div>
-                        <h1>Tartare de poulpe acidulé</h1>
-                        <h2>Aux zestes d'orange</h2>
-                    </div>
-                    <div>
-                        <p>25€</p>
-                    </div>
+            <div id="desserts__3">
+                <div class="description">
+                    <h1>Tartare de poulpe acidulé</h1>
+                    <h2>Aux zestes d'orange</h2>
                 </div>
-                <div #hidden>
-                    <button>
-                        <mat-icon></mat-icon>
-                    </button>
+                <div class="price">
+                    <p>25€</p>
+                </div>
+                <div class="hidden">
+                    <i class="fas fa-check-circle icon"></i>
                 </div>
             </div>
         </section>
         <button type="button">Commander</button>
     </section>
-    <footer>
-        <header>
-            <h1>
+    <footer class="footer">
+        <header class="footer__header">
+            <h1 class="shrikhand">
                 ohmyfood
             </h1>
         </header>
-        <ul>
+        <ul class="footer__list">
             <li>
-                <div>
-                    <mat-icon></mat-icon>
-                    <p>Proposer un restaurant</p>
-                </div>
+                <p><i class="fas fa-utensils icon"></i> Proposer un restaurant</p>
             </li>
             <li>
-                <div>
-                    <mat-icon></mat-icon>
-                    <p>Devenir partenaire</p>
-                </div>
+                <p><i class="fas fa-hands-helping icon"></i> Devenir partenaire</p>
             </li>
             <li>
-                <div>
-                    <p>Mentions légales</p>
-                </div>
+                <p>Mentions légales</p>
             </li>
             <li>
-                <div>
-                    <p>Contact</p>
-                </div>
+                <p>Contact</p>
             </li>
         </ul>
     </footer>
-</div>
+</body>

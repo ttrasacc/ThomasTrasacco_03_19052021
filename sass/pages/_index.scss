@@ -150,16 +150,12 @@
     }
 }
 
-.fas {
-    display: none !important;
+#favorite1, #favorite2, #favorite3, #favorite4 {
+    @include checkbox-style;
 }
 
-#favorite:checked ~ .far {
-   display: none;
-}
-
-#favorite:checked ~ .fas {
-    display: inline-block;
+label:hover {
+    cursor: pointer;
 }
 
 .footer {
@@ -180,6 +176,9 @@
         margin: 0 0 0 25px;
         li {
             margin-bottom: 15px;
+            .icon {
+                min-width: 50px;
+            }
         }
     }
 }

@@ -29,3 +29,21 @@
         margin: 0 auto;
     }
 }
+
+@mixin checkbox-style {
+    display: none;
+    & ~ label .checked {
+        display: none;
+    }
+    &:checked {
+        & ~ label {
+            .checked {
+                display: inline-block;
+                color: rgb(174,113,200);
+            }
+            .not-checked {
+                display: none;
+            }
+        }
+    }
+}
