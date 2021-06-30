@@ -1,4 +1,20 @@
 @keyframes fadein {
-  from { opacity: 0}
-  to   { opacity: 1}
+  from { opacity: 0 }
+  to   { opacity: 1 }
+}
+
+@keyframes translateY {
+  from { transform: translateY(100px) }
+  to   { transform: translateY(0px) }
+}
+
+@keyframes translateYAndFadeIn {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to   {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }

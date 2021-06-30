@@ -1,0 +1,195 @@
+#menu header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85%;
+}
+#menu {
+    display: flex;
+    flex-direction: column;
+    border-radius: 65px 65px 0 0;
+    margin-top: -60px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 24px;
+    header {
+        margin: 15px 5px 5px 5px;
+        h1 {
+            font-size: 2.5em;
+            font-style: oblique;
+            font-weight: normal;
+        }
+        .row {
+            width: auto;
+        }
+    }
+    h1 {
+        font-size: 2em;
+        margin: 3px;
+    }
+    h2 {
+        font-size: 1.3em;
+        margin: 3px;
+    }
+    p {
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+    .menu-titles {
+        font-size: 2em;
+        font-style: normal;
+    }
+}
+
+.btn {
+    @include btn;
+    margin: 60px 40px 100px 40px;
+    box-shadow: 1px 1px 12px #555;
+    &:active {
+        box-shadow: none;
+    }
+}
+.gradient {
+    background: rgb(174,113,200);
+    background: linear-gradient(0deg, rgba(174,113,200,1) 53%, rgba(242,108,233,1) 100%);
+    &:hover {
+        background: rgba(242,108,233,1);
+        background: linear-gradient(0deg, rgba(242,108,233,1) 53%, rgba(174,113,200,1) 100%);
+    }
+}
+
+.image {
+    align-self: center;
+    border: transparent;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#entrees, #dishes, #desserts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    border-radius: 15px;
+    margin-top: 5px;
+    header {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        hr {
+            width: 40px;
+            margin-left: 3px;
+            background-color: $tertiary-color;
+            height: 3px;
+            border: none;
+        }
+    }
+    &__1, &__2, &__3 {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        box-shadow: 3px 5px 15px lightgrey;
+        margin-top: 25px;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 15px;
+        .description {
+            padding: 10px;
+            width: 75%;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            transition: width 750ms ease-in-out;
+        }
+        .price {
+            width: 60px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            white-space: nowrap;
+            justify-content: flex-end;
+            align-items: flex-start;
+            p {
+                margin-bottom: 10px;
+            }
+        }
+        .hidden {
+            display: flex;
+            width: 0px;
+            justify-content: center;
+            align-items: center;
+            background-color: $tertiary-color;
+            color: white;
+            transform: translate(70px, 0);
+            transition: transform 750ms ease-in-out;
+            transition: width 750ms ease-in-out;
+            .icon {
+                transform: rotate(-2turn);
+                transition: transform 750ms ease-in-out;
+            }
+        }
+    }
+}
+
+ #entrees__1, #dishes__1, #desserts__1 {
+    animation: translateYAndFadeIn 1.5s;
+
+    &:hover {
+        cursor: pointer;
+        .hidden {
+            width: 80px;
+            transform: translate(0);
+            .icon {
+                transform: rotate(0turn); 
+            }
+        }
+    }
+ }
+
+ #entrees__2, #dishes__2, #desserts__2 {
+    animation: translateYAndFadeIn 2s;
+    &:hover {
+        .hidden {
+            width: 80px;
+            transform: translate(0);
+            .icon {
+                transform: rotate(0turn); 
+            }
+        }
+    }
+ }
+
+#entrees__3, #dishes__3, #desserts__3 {
+    animation: translateYAndFadeIn 2.5s;
+    &:hover {
+        .hidden {
+            width: 80px;
+            transform: translate(0);
+            .icon {
+                transform: rotate(0turn); 
+            }
+        }
+    }
+}
+
+#entrees__4, #dishes__4, #desserts__4 {
+    animation: translateYAndFadeIn 3s;
+    &:hover {
+        .hidden {
+            width: 80px;
+            transform: translate(0);
+            .icon {
+                transform: rotate(0turn); 
+            }
+        }
+    }
+}
