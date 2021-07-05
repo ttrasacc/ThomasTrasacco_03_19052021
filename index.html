@@ -1,150 +1,155 @@
 <!DOCTYPE html>
-<head>
-    <title>ohmyfood</title>
-    <link rel="stylesheet" href="./public/css/style.css">
-    <script src="https://kit.fontawesome.com/fc82092fd5.js" crossorigin="anonymous"></script>
-</head>
-<body class="page"> 
-    <header class="page__header">
-        <img class="name-logo" src="public/images/ohmyfood.png" alt="logo_image">
-    </header>
-    <div class="location">
-        <div class="location__logo">
-            <i class="fas fa-map-marker-alt"></i>
-        </div>
-        <p>Paris, Belleville</p>
-    </div>
-    <section class="intro">
-        <div class="text-container">
-            <h1>Réservez le menu qui</h1>
-            <h1>vous convient</h1>
-        </div>
-        <div class="text-container">
-            <h2>Découvrez des restaurants d'exception,</h2>
-            <h2>sélectionnés par nos soins</h2>
-        </div>
-        <button type="button" class="btn gradient">Explorer nos restaurants</button>
-    </section>
-    <section class="steps-container">
-        <header>
-            <h1>Fonctionnement</h1>
-        </header>
-        <div class="steps-container__regrouper">
-            <div class="scr-step">
-                <p class="scr-step__number">1</p>
-                <i class="fas fa-mobile-alt fa-2x relative-pos"></i>
-                <p class="scr-step__label">Choisissez un restaurant</p>
+<html lang="fr">
+    <head>
+        <title>ohmyfood</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="./public/css/style.css" />
+        <script src="https://kit.fontawesome.com/fc82092fd5.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="page">
+        <div class="content">
+            <header class="page__header">
+                <img class="name-logo" src="public/images/ohmyfood.png" alt="logo_image">
+            </header>
+            <div class="location">
+                <div class="location__logo">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <p>Paris, Belleville</p>
             </div>
-            <div class="scr-step">
-                <p class="scr-step__number">2</p>
-                <i class="fas fa-bars fa-2x relative-pos"></i>
-                <p class="scr-step__label">Composez votre menu</p>
-            </div>
-            <div class="scr-step scr-step--colored">
-                <p class="scr-step__number">3</p>
-                <i class="fas fa-store fa-2x relative-pos"></i>
-                <p class="scr-step__label">Dégustez au restaurant</p>
-            </div>
-        </div>
-    </section>
-    <section class="restos-container">
-        <header class="restos-container__header">
-            <h1>Restaurants</h1>
-        </header>
-        <div class="restos-regrouper">
-            <div class="restos-regrouper__resto">
-                <a href="./menuLaPaletteDuGout.html">
-                    <div class="rrr__image" id="id_1"></div>
-                </a>
-                <div class="row">
-                    <div class="row__labels">
+            <section class="intro">
+                <div class="text-container">
+                    <h1>Réservez le menu qui</h1>
+                    <h1>vous convient</h1>
+                </div>
+                <div class="text-container">
+                    <h2>Découvrez des restaurants d'exception,</h2>
+                    <h2>sélectionnés par nos soins</h2>
+                </div>
+                <button type="button" class="btn gradient">Explorer nos restaurants</button>
+            </section>
+            <section class="steps-container">
+                <header>
+                    <h1>Fonctionnement</h1>
+                </header>
+                <div class="steps-container__regrouper">
+                    <div class="scr-step">
+                        <p class="scr-step__number">1</p>
+                        <i class="fas fa-mobile-alt fa-2x relative-pos"></i>
+                        <p class="scr-step__label">Choisissez un restaurant</p>
+                    </div>
+                    <div class="scr-step">
+                        <p class="scr-step__number">2</p>
+                        <i class="fas fa-bars fa-2x relative-pos"></i>
+                        <p class="scr-step__label">Composez votre menu</p>
+                    </div>
+                    <div class="scr-step scr-step--colored">
+                        <p class="scr-step__number">3</p>
+                        <i class="fas fa-store fa-2x relative-pos"></i>
+                        <p class="scr-step__label">Dégustez au restaurant</p>
+                    </div>
+                </div>
+            </section>
+            <section class="restos-container">
+                <header class="restos-container__header">
+                    <h1>Restaurants</h1>
+                </header>
+                <div class="restos-regrouper">
+                    <div class="restos-regrouper__resto">
                         <a href="./menuLaPaletteDuGout.html">
-                            <h2 class="bold">La palette du goût</h2>
+                            <div class="rrr__image" id="id_1"></div>
                         </a>
-                        <p>Ménilmontant</p>
+                        <div class="row">
+                            <div class="row__labels">
+                                <a href="./menuLaPaletteDuGout.html">
+                                    <h2 class="bold">La palette du goût</h2>
+                                </a>
+                                <p>Ménilmontant</p>
+                            </div>
+                            <div class="row__favorite-icon">
+                                <input type="checkbox" id="favorite1">
+                                <label for="favorite1"><i class="far fa-heart fa-3x not-checked"></i></label>
+                                <label for="favorite1"><i class="fas fa-heart fa-3x checked"></i></label>
+                            </div>
+                        </div>
                     </div>
-                    <div class="row__favorite-icon">
-                        <input type="checkbox" id="favorite1">
-                        <label for="favorite1"><i class="far fa-heart fa-3x not-checked"></i></label>
-                        <label for="favorite1"><i class="fas fa-heart fa-3x checked"></i></label>
-                    </div>
-                </div>
-            </div>
-            <div class="restos-regrouper__resto">
-                <a href="./menuLaNoteEnchantee.html">
-                    <div class="rrr__image" id="id_2"></div>
-                </a>
-                <div class="row">
-                    <div class="row__labels">
+                    <div class="restos-regrouper__resto">
                         <a href="./menuLaNoteEnchantee.html">
-                            <h2 class="bold">La note enchantée</h2>
+                            <div class="rrr__image" id="id_2"></div>
                         </a>
-                        <p>Charonne</p>
+                        <div class="row">
+                            <div class="row__labels">
+                                <a href="./menuLaNoteEnchantee.html">
+                                    <h2 class="bold">La note enchantée</h2>
+                                </a>
+                                <p>Charonne</p>
+                            </div>
+                            <div class="row__favorite-icon">
+                                <input type="checkbox" id="favorite2">
+                                <label for="favorite2"><i class="far fa-heart fa-3x not-checked"></i></label>
+                                <label for="favorite2"><i class="fas fa-heart fa-3x checked"></i></label>
+                            </div>
+                        </div>
                     </div>
-                    <div class="row__favorite-icon">
-                        <input type="checkbox" id="favorite2">
-                        <label for="favorite2"><i class="far fa-heart fa-3x not-checked"></i></label>
-                        <label for="favorite2"><i class="fas fa-heart fa-3x checked"></i></label>
+                    <div class="restos-regrouper__resto">
+                        <a href="./menuALaFrancaise.html">
+                            <div class="rrr__image" id="id_3"></div>
+                        </a>
+                        <div class="row">
+                        <div class="row__labels">
+                            <a href="./menuALaFrancaise.html">
+                                <h2 class="bold">A la française</h2>
+                            </a>
+                            <p>Cité Rouge</p>
+                        </div>
+                            <div class="row__favorite-icon">
+                                    <input type="checkbox" id="favorite3">
+                                    <label for="favorite3"><i class="far fa-heart fa-3x not-checked"></i></label>
+                                    <label for="favorite3"><i class="fas fa-heart fa-3x checked"></i></label>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="restos-regrouper__resto">
-                <a href="./menuALaFrancaise.html">
-                    <div class="rrr__image" id="id_3"></div>
-                </a>
-                <div class="row">
-                <div class="row__labels">
-                    <a href="./menuALaFrancaise.html">
-                        <h2 class="bold">A la française</h2>
-                    </a>
-                    <p>Cité Rouge</p>
-                </div>
-                    <div class="row__favorite-icon">
-                            <input type="checkbox" id="favorite3">
-                            <label for="favorite3"><i class="far fa-heart fa-3x not-checked"></i></label>
-                            <label for="favorite3"><i class="fas fa-heart fa-3x checked"></i></label>
-                    </div>
-                </div>
-            </div>
-            <div class="restos-regrouper__resto">
-                <a href="./menuLeDeliceDesSens.html">
-                    <div class="rrr__image" id="id_4"></div>
-                </a>
-                <div class="row">
-                    <div class="row__labels">
+                    <div class="restos-regrouper__resto">
                         <a href="./menuLeDeliceDesSens.html">
-                            <h2 class="bold">Le délice des sens</h2>
+                            <div class="rrr__image" id="id_4"></div>
                         </a>
-                        <p>Folie-Méricourt</p>
-                    </div>
-                    <div class="row__favorite-icon">
-                        <input type="checkbox" id="favorite4">
-                        <label for="favorite4"><i class="far fa-heart fa-3x not-checked"></i></label>
-                        <label for="favorite4"><i class="fas fa-heart fa-3x checked"></i></label>
+                        <div class="row">
+                            <div class="row__labels">
+                                <a href="./menuLeDeliceDesSens.html">
+                                    <h2 class="bold">Le délice des sens</h2>
+                                </a>
+                                <p>Folie-Méricourt</p>
+                            </div>
+                            <div class="row__favorite-icon">
+                                <input type="checkbox" id="favorite4">
+                                <label for="favorite4"><i class="far fa-heart fa-3x not-checked"></i></label>
+                                <label for="favorite4"><i class="fas fa-heart fa-3x checked"></i></label>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
+            <footer class="footer">
+                <div class="footer__header">
+                    <h1 class="shrikhand">
+                        ohmyfood
+                    </h1>
+                </div>
+                <ul class="footer__list">
+                    <li>
+                        <p><i class="fas fa-utensils icon"></i> Proposer un restaurant</p>
+                    </li>
+                    <li>
+                        <p><i class="fas fa-hands-helping icon"></i> Devenir partenaire</p>
+                    </li>
+                    <li>
+                        <p>Mentions légales</p>
+                    </li>
+                    <li>
+                        <p>Contact</p>
+                    </li>
+                </ul>
+            </footer>
         </div>
-    </section>
-    <footer class="footer">
-        <header class="footer__header">
-            <h1 class="shrikhand">
-                ohmyfood
-            </h1>
-        </header>
-        <ul class="footer__list">
-            <li>
-                <p><i class="fas fa-utensils icon"></i> Proposer un restaurant</p>
-            </li>
-            <li>
-                <p><i class="fas fa-hands-helping icon"></i> Devenir partenaire</p>
-            </li>
-            <li>
-                <p>Mentions légales</p>
-            </li>
-            <li>
-                <p>Contact</p>
-            </li>
-        </ul>
-    </footer>
-</body>
+    </body>
+</html>

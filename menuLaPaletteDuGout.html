@@ -1,174 +1,176 @@
-<head>
-    <link rel="stylesheet" href="./public/css/style.css">
-    <script src="https://kit.fontawesome.com/fc82092fd5.js" crossorigin="anonymous"></script>
-</head>
-
-<body class="page">
-    <header class="page__header">
-        <img class="name-logo" src="public/images/ohmyfood.png">
-    </header>
-    <section class="image" id="id_1"></section>
-    <section id="menu">
-        <header>
-            <h1 class="shrikhand">La palette du goût</h1>
-            <div class="row">
-                <input type="checkbox" id="favorite1">
-                <label for="favorite1"><i class="far fa-heart fa-3x not-checked"></i></label>
-                <label for="favorite1"><i class="fas fa-heart fa-3x checked"></i></label>
-            </div>
-        </header>
-        <section id="entrees">
-            <header>
-                <h1 class="menu-titles">ENTRÉES</h1>
-                <hr>
-                </hr>
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>La palette du goût</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="./public/css/style.css">
+        <script src="https://kit.fontawesome.com/fc82092fd5.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="page">
+        <div class="content">
+            <header class="page__header">
+                <div class="back-to-home-page"><a href="./index.html"><i class="fas fa-arrow-left"></i></a></div>
+                <img class="name-logo" src="public/images/ohmyfood.png" alt="image-menu-header">
             </header>
-            <div id="entrees__1">
-                <div class="description">
-                    <h1>Fricassée d'escargot</h1>
-                    <h2>Au piment d'Espelette</h2>
-                </div>
-                <div class="price">
-                    <p>25€</p>
-                </div>
-                <div class="hidden">
-                    <i class="fas fa-check-circle icon"></i>
-                </div>
-            </div>
-            <div id="entrees__2">
-                <div class="description">
-                    <h1>Foie gras de canard mi-cuit</h1>
-                    <h2>Et ses copeaux de truffe noire</h2>
-                </div>
-                <div class="price">
-                    <p>35€</p>
-                </div>
-                <div class="hidden">
-                    <i class="fas fa-check-circle icon"></i>
-                </div>
-            </div>
-            <div id="entrees__3">
-                <div class="description">
-                    <h1>Oeuf au plat</h1>
-                    <h2>Assaisonné à la truffe sur lit de caviar</h2>
-                </div>
-                <div class="price">
-                    <p>20€</p>
-                </div>
-                <div class="hidden">
-                    <i class="fas fa-check-circle icon"></i>
-                </div>
-            </div>
-        </section>
-        <section id="dishes">
-            <header>
-                <h1 class="menu-titles">PLATS</h1>
-                <hr>
-                </hr>
-            </header>
-            <div id="dishes__1">
-                <div class="description">
-                    <h1>Filet de boeuf aux herbes</h1>
-                    <h2>Accompagné de sa ribambelle de légumes</h2>
-                </div>
-                <div class="price">
-                    <p>40€</p>
-                </div>
-                <div class="hidden">
-                    <i class="fas fa-check-circle icon"></i>
-                </div>
-            </div>
-            <div id="dishes__2">
-                <div class="description">
-                    <h1>Parmentier de queue de boeuf</h1>
-                    <h2>À la truffe noire sur sa purée de panais</h2>
-                </div>
-                <div class="price">
-                    <p>35€</p>
-                </div>
-                <div class="hidden">
-                    <i class="fas fa-check-circle icon"></i>
-                </div>
-            </div>
-            <div id="dishes__3">
-                <div class="description">
-                    <h1>Filet de turbot</h1>
-                    <h2>Aux agrumes</h2>
-                </div>
-                <div class="price">
-                    <p>44€</p>
-                </div>
-                <div class="hidden">
-                    <i class="fas fa-check-circle icon"></i>
-                </div>
-            </div>
-        </section>
-        <section id="desserts">
-            <header>
-                <h1 class="menu-titles">DESSERTS</h1>
-                <hr>
-                </hr>
-            </header>
-            <div id="desserts__1">
-                <div class="description">
-                    <h1>Paris-Brest</h1>
-                    <h2>Revisité</h2>
-                </div>
-                <div class="price">
-                    <p>18€</p>
-                </div>
-                <div class="hidden">
-                    <i class="fas fa-check-circle icon"></i>
-                </div>
-            </div>
-            <div id="desserts__2">
-                <div class="description">
-                    <h1>Macaron au chocolat d'exception</h1>
-                    <h2>Et glace à la vanille de Madagascar</h2>
-                </div>
-                <div class="price">
-                    <p>22€</p>
-                </div>
-                <div class="hidden">
-                    <i class="fas fa-check-circle icon"></i>
-                </div>
-            </div>
-            <div id="desserts__3">
-                <div class="description">
-                    <h1>Mousse au chocolat</h1>
-                    <h2>Au piment d'Espelette et à la truffe noire</h2>
-                </div>
-                <div class="price">
-                    <p>23€</p>
-                </div>
-                <div class="hidden">
-                    <i class="fas fa-check-circle icon"></i>
-                </div>
-            </div>
-        </section>
-        <button type="button" class="btn gradient">
-            <h2>Commander</h2>
-        </button>
-    </section>
-    <footer class="footer">
-        <header class="footer__header">
-            <h1 class="shrikhand">
-                ohmyfood
-            </h1>
-        </header>
-        <ul class="footer__list">
-            <li>
-                <p><i class="fas fa-utensils icon"></i> Proposer un restaurant</p>
-            </li>
-            <li>
-                <p><i class="fas fa-hands-helping icon"></i> Devenir partenaire</p>
-            </li>
-            <li>
-                <p>Mentions légales</p>
-            </li>
-            <li>
-                <p>Contact</p>
-            </li>
-        </ul>
-    </footer>
-</body>
+            <div class="image" id="id_1"></div>
+            <section id="menu">
+                <header>
+                    <h1 class="shrikhand">La palette du goût</h1>
+                    <div class="row">
+                        <input type="checkbox" id="favorite1">
+                        <label for="favorite1"><i class="far fa-heart fa-3x not-checked"></i></label>
+                        <label for="favorite1"><i class="fas fa-heart fa-3x checked"></i></label>
+                    </div>
+                </header>
+                <section id="entrees">
+                    <header>
+                        <h1 class="menu-titles">ENTRÉES</h1>
+                        <hr>
+                    </header>
+                    <div id="entrees__1">
+                        <div class="description">
+                            <h1>Fricassée d'escargot</h1>
+                            <h2>Au piment d'Espelette</h2>
+                        </div>
+                        <div class="price">
+                            <p>25€</p>
+                        </div>
+                        <div class="hidden">
+                            <i class="fas fa-check-circle icon"></i>
+                        </div>
+                    </div>
+                    <div id="entrees__2">
+                        <div class="description">
+                            <h1>Foie gras de canard mi-cuit</h1>
+                            <h2>Et ses copeaux de truffe noire</h2>
+                        </div>
+                        <div class="price">
+                            <p>35€</p>
+                        </div>
+                        <div class="hidden">
+                            <i class="fas fa-check-circle icon"></i>
+                        </div>
+                    </div>
+                    <div id="entrees__3">
+                        <div class="description">
+                            <h1>Oeuf au plat</h1>
+                            <h2>Assaisonné à la truffe sur lit de caviar</h2>
+                        </div>
+                        <div class="price">
+                            <p>20€</p>
+                        </div>
+                        <div class="hidden">
+                            <i class="fas fa-check-circle icon"></i>
+                        </div>
+                    </div>
+                </section>
+                <section id="dishes">
+                    <header>
+                        <h1 class="menu-titles">PLATS</h1>
+                        <hr>
+                    </header>
+                    <div id="dishes__1">
+                        <div class="description">
+                            <h1>Filet de boeuf aux herbes</h1>
+                            <h2>Accompagné de sa ribambelle de légumes</h2>
+                        </div>
+                        <div class="price">
+                            <p>40€</p>
+                        </div>
+                        <div class="hidden">
+                            <i class="fas fa-check-circle icon"></i>
+                        </div>
+                    </div>
+                    <div id="dishes__2">
+                        <div class="description">
+                            <h1>Parmentier de queue de boeuf</h1>
+                            <h2>À la truffe noire sur sa purée de panais</h2>
+                        </div>
+                        <div class="price">
+                            <p>35€</p>
+                        </div>
+                        <div class="hidden">
+                            <i class="fas fa-check-circle icon"></i>
+                        </div>
+                    </div>
+                    <div id="dishes__3">
+                        <div class="description">
+                            <h1>Filet de turbot</h1>
+                            <h2>Aux agrumes</h2>
+                        </div>
+                        <div class="price">
+                            <p>44€</p>
+                        </div>
+                        <div class="hidden">
+                            <i class="fas fa-check-circle icon"></i>
+                        </div>
+                    </div>
+                </section>
+                <section id="desserts">
+                    <header>
+                        <h1 class="menu-titles">DESSERTS</h1>
+                        <hr>
+                    </header>
+                    <div id="desserts__1">
+                        <div class="description">
+                            <h1>Paris-Brest</h1>
+                            <h2>Revisité</h2>
+                        </div>
+                        <div class="price">
+                            <p>18€</p>
+                        </div>
+                        <div class="hidden">
+                            <i class="fas fa-check-circle icon"></i>
+                        </div>
+                    </div>
+                    <div id="desserts__2">
+                        <div class="description">
+                            <h1>Macaron au chocolat d'exception</h1>
+                            <h2>Et glace à la vanille de Madagascar</h2>
+                        </div>
+                        <div class="price">
+                            <p>22€</p>
+                        </div>
+                        <div class="hidden">
+                            <i class="fas fa-check-circle icon"></i>
+                        </div>
+                    </div>
+                    <div id="desserts__3">
+                        <div class="description">
+                            <h1>Mousse au chocolat</h1>
+                            <h2>Au piment d'Espelette et à la truffe noire</h2>
+                        </div>
+                        <div class="price">
+                            <p>23€</p>
+                        </div>
+                        <div class="hidden">
+                            <i class="fas fa-check-circle icon"></i>
+                        </div>
+                    </div>
+                </section>
+                <button type="button" class="btn gradient">Commander</button>
+            </section>
+            <footer class="footer">
+                <div class="footer__header">
+                    <h1 class="shrikhand">
+                        ohmyfood
+                    </h1>
+                </div>>
+                <ul class="footer__list">
+                    <li>
+                        <p><i class="fas fa-utensils icon"></i> Proposer un restaurant</p>
+                    </li>
+                    <li>
+                        <p><i class="fas fa-hands-helping icon"></i> Devenir partenaire</p>
+                    </li>
+                    <li>
+                        <p>Mentions légales</p>
+                    </li>
+                    <li>
+                        <p>Contact</p>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+    </body>
+</html>

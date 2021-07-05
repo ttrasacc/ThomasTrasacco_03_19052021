@@ -14,7 +14,7 @@ html {
     font-size: 62.5%;
 }
 
-body {
+.content {
     outline: none;
     box-sizing: border-box;
     display: flex;
@@ -23,13 +23,14 @@ body {
     justify-content: center;
     width: 100%;
     max-width: 1920px;
+    margin: auto;
 }
 
 a{
-    color: black;
+    color: inherit;
     text-decoration: none;
     &:visited {
-    color: black;
+    color: inherit;
     text-decoration: none;
     }
     &:hover {
