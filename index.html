@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <head>
+    <title>ohmyfood</title>
     <link rel="stylesheet" href="./public/css/style.css">
     <script src="https://kit.fontawesome.com/fc82092fd5.js" crossorigin="anonymous"></script>
 </head>
 <body class="page"> 
     <header class="page__header">
-        <img class="name-logo" src="public/images/ohmyfood.png">
+        <img class="name-logo" src="public/images/ohmyfood.png" alt="logo_image">
     </header>
     <div class="location">
         <div class="location__logo">
@@ -22,7 +23,7 @@
             <h2>Découvrez des restaurants d'exception,</h2>
             <h2>sélectionnés par nos soins</h2>
         </div>
-        <button type="button" class="btn gradient"><h2>Explorer nos restaurants</h2></button>
+        <button type="button" class="btn gradient">Explorer nos restaurants</button>
     </section>
     <section class="steps-container">
         <header>
@@ -52,10 +53,14 @@
         </header>
         <div class="restos-regrouper">
             <div class="restos-regrouper__resto">
-                <div class="rrr__image" id="id_1"></div>
+                <a href="./menuLaPaletteDuGout.html">
+                    <div class="rrr__image" id="id_1"></div>
+                </a>
                 <div class="row">
                     <div class="row__labels">
-                        <h2 class="bold">La palette du goût</h2>
+                        <a href="./menuLaPaletteDuGout.html">
+                            <h2 class="bold">La palette du goût</h2>
+                        </a>
                         <p>Ménilmontant</p>
                     </div>
                     <div class="row__favorite-icon">
@@ -66,10 +71,14 @@
                 </div>
             </div>
             <div class="restos-regrouper__resto">
-                <div class="rrr__image" id="id_2"></div>
+                <a href="./menuLaNoteEnchantee.html">
+                    <div class="rrr__image" id="id_2"></div>
+                </a>
                 <div class="row">
                     <div class="row__labels">
-                        <h2 class="bold">La note enchantée</h2>
+                        <a href="./menuLaNoteEnchantee.html">
+                            <h2 class="bold">La note enchantée</h2>
+                        </a>
                         <p>Charonne</p>
                     </div>
                     <div class="row__favorite-icon">
@@ -80,24 +89,32 @@
                 </div>
             </div>
             <div class="restos-regrouper__resto">
-                <div class="rrr__image" id="id_3"></div>
+                <a href="./menuALaFrancaise.html">
+                    <div class="rrr__image" id="id_3"></div>
+                </a>
                 <div class="row">
-                    <div class="row__labels">
+                <div class="row__labels">
+                    <a href="./menuALaFrancaise.html">
                         <h2 class="bold">A la française</h2>
-                        <p>Cité Rouge</p>
-                    </div>
+                    </a>
+                    <p>Cité Rouge</p>
+                </div>
                     <div class="row__favorite-icon">
-                        <input type="checkbox" id="favorite3">
-                        <label for="favorite3"><i class="far fa-heart fa-3x not-checked"></i></label>
-                        <label for="favorite3"><i class="fas fa-heart fa-3x checked"></i></label>
+                            <input type="checkbox" id="favorite3">
+                            <label for="favorite3"><i class="far fa-heart fa-3x not-checked"></i></label>
+                            <label for="favorite3"><i class="fas fa-heart fa-3x checked"></i></label>
                     </div>
                 </div>
             </div>
             <div class="restos-regrouper__resto">
-                <div class="rrr__image" id="id_4"></div>
+                <a href="./menuLeDeliceDesSens.html">
+                    <div class="rrr__image" id="id_4"></div>
+                </a>
                 <div class="row">
                     <div class="row__labels">
-                        <h2 class="bold">Le délice des sens</h2>
+                        <a href="./menuLeDeliceDesSens.html">
+                            <h2 class="bold">Le délice des sens</h2>
+                        </a>
                         <p>Folie-Méricourt</p>
                     </div>
                     <div class="row__favorite-icon">

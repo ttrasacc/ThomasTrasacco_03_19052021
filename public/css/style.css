@@ -48,7 +48,21 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 100%;
+  width: 100%;
+  max-width: 1920px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: #9356DC;
 }
 
 @font-face {
@@ -118,7 +132,7 @@ p {
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 10px 0 10px 0;
+  padding: 25px 0 25px 0;
 }
 .location__logo {
   margin-right: 25px;
@@ -149,6 +163,7 @@ p {
   color: whitesmoke;
   background: #FF79DA;
   cursor: pointer;
+  font-size: 1.5em;
   margin-top: 25px;
   box-shadow: 1px 1px 12px #555;
 }
@@ -211,7 +226,7 @@ p {
   background-color: #9356DC;
 }
 .scr-step--colored {
-  background-color: #FF79DA;
+  background-color: rgba(147, 86, 220, 0.2);
 }
 .scr-step--colored .fa-store {
   color: #9356DC;
@@ -453,13 +468,13 @@ label:hover {
   align-self: flex-start;
 }
 #entrees header hr, #dishes header hr, #desserts header hr {
-  width: 40px;
+  width: 55px;
   margin-left: 3px;
   background-color: #99E2D0;
   height: 3px;
   border: none;
 }
-#entrees__1, #entrees__2, #entrees__3, #dishes__1, #dishes__2, #dishes__3, #desserts__1, #desserts__2, #desserts__3 {
+#entrees__1, #entrees__2, #entrees__3, #entrees__4, #dishes__1, #dishes__2, #dishes__3, #dishes__4, #desserts__1, #desserts__2, #desserts__3, #desserts__4 {
   display: flex;
   justify-content: space-between;
   background-color: white;
@@ -469,7 +484,7 @@ label:hover {
   overflow: hidden;
   border-radius: 15px;
 }
-#entrees__1 .description, #entrees__2 .description, #entrees__3 .description, #dishes__1 .description, #dishes__2 .description, #dishes__3 .description, #desserts__1 .description, #desserts__2 .description, #desserts__3 .description {
+#entrees__1 .description, #entrees__2 .description, #entrees__3 .description, #entrees__4 .description, #dishes__1 .description, #dishes__2 .description, #dishes__3 .description, #dishes__4 .description, #desserts__1 .description, #desserts__2 .description, #desserts__3 .description, #desserts__4 .description {
   padding: 10px;
   width: 75%;
   display: flex;
@@ -479,7 +494,7 @@ label:hover {
   white-space: nowrap;
   transition: width 750ms ease-in-out;
 }
-#entrees__1 .price, #entrees__2 .price, #entrees__3 .price, #dishes__1 .price, #dishes__2 .price, #dishes__3 .price, #desserts__1 .price, #desserts__2 .price, #desserts__3 .price {
+#entrees__1 .price, #entrees__2 .price, #entrees__3 .price, #entrees__4 .price, #dishes__1 .price, #dishes__2 .price, #dishes__3 .price, #dishes__4 .price, #desserts__1 .price, #desserts__2 .price, #desserts__3 .price, #desserts__4 .price {
   width: 60px;
   display: flex;
   flex-direction: column;
@@ -488,10 +503,10 @@ label:hover {
   justify-content: flex-end;
   align-items: flex-start;
 }
-#entrees__1 .price p, #entrees__2 .price p, #entrees__3 .price p, #dishes__1 .price p, #dishes__2 .price p, #dishes__3 .price p, #desserts__1 .price p, #desserts__2 .price p, #desserts__3 .price p {
+#entrees__1 .price p, #entrees__2 .price p, #entrees__3 .price p, #entrees__4 .price p, #dishes__1 .price p, #dishes__2 .price p, #dishes__3 .price p, #dishes__4 .price p, #desserts__1 .price p, #desserts__2 .price p, #desserts__3 .price p, #desserts__4 .price p {
   margin-bottom: 10px;
 }
-#entrees__1 .hidden, #entrees__2 .hidden, #entrees__3 .hidden, #dishes__1 .hidden, #dishes__2 .hidden, #dishes__3 .hidden, #desserts__1 .hidden, #desserts__2 .hidden, #desserts__3 .hidden {
+#entrees__1 .hidden, #entrees__2 .hidden, #entrees__3 .hidden, #entrees__4 .hidden, #dishes__1 .hidden, #dishes__2 .hidden, #dishes__3 .hidden, #dishes__4 .hidden, #desserts__1 .hidden, #desserts__2 .hidden, #desserts__3 .hidden, #desserts__4 .hidden {
   display: flex;
   width: 0px;
   justify-content: center;
@@ -502,7 +517,7 @@ label:hover {
   transition: transform 750ms ease-in-out;
   transition: width 750ms ease-in-out;
 }
-#entrees__1 .hidden .icon, #entrees__2 .hidden .icon, #entrees__3 .hidden .icon, #dishes__1 .hidden .icon, #dishes__2 .hidden .icon, #dishes__3 .hidden .icon, #desserts__1 .hidden .icon, #desserts__2 .hidden .icon, #desserts__3 .hidden .icon {
+#entrees__1 .hidden .icon, #entrees__2 .hidden .icon, #entrees__3 .hidden .icon, #entrees__4 .hidden .icon, #dishes__1 .hidden .icon, #dishes__2 .hidden .icon, #dishes__3 .hidden .icon, #dishes__4 .hidden .icon, #desserts__1 .hidden .icon, #desserts__2 .hidden .icon, #desserts__3 .hidden .icon, #desserts__4 .hidden .icon {
   transform: rotate(-2turn);
   transition: transform 750ms ease-in-out;
 }

@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 10px 0 10px 0;
+    padding: 25px 0 25px 0;
     &__logo {
         margin-right: 25px;
     }
@@ -30,6 +30,7 @@
     }
     .btn {
         @include btn;
+        font-size: 1.5em;
         margin-top: 25px;
         box-shadow: 1px 1px 12px #555;
         &:active {
@@ -84,7 +85,7 @@
         background-color: $primary-color;
     }
     &--colored {
-        background-color: $secondary-color;
+        background-color: transparentize($primary-color, 0.8);
         .fa-store {
             color: $primary-color;
         }

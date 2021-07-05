@@ -84,14 +84,14 @@
         flex-direction: column;
         align-self: flex-start;
         hr {
-            width: 40px;
+            width: 55px;
             margin-left: 3px;
             background-color: $tertiary-color;
             height: 3px;
             border: none;
         }
     }
-    &__1, &__2, &__3 {
+    &__1, &__2, &__3, &__4 {
         display: flex;
         justify-content: space-between;
         background-color: white;
