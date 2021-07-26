@@ -557,6 +557,9 @@ label:hover {
 #entrees__2, #dishes__2, #desserts__2 {
   animation: translateYAndFadeIn 2s;
 }
+#entrees__2:hover, #dishes__2:hover, #desserts__2:hover {
+  cursor: pointer;
+}
 #entrees__2:hover .hidden, #dishes__2:hover .hidden, #desserts__2:hover .hidden {
   width: 80px;
   transform: translate(0);
@@ -568,6 +571,9 @@ label:hover {
 #entrees__3, #dishes__3, #desserts__3 {
   animation: translateYAndFadeIn 2.5s;
 }
+#entrees__3:hover, #dishes__3:hover, #desserts__3:hover {
+  cursor: pointer;
+}
 #entrees__3:hover .hidden, #dishes__3:hover .hidden, #desserts__3:hover .hidden {
   width: 80px;
   transform: translate(0);
@@ -578,6 +584,9 @@ label:hover {
 
 #entrees__4, #dishes__4, #desserts__4 {
   animation: translateYAndFadeIn 3s;
+}
+#entrees__4:hover, #dishes__4:hover, #desserts__4:hover {
+  cursor: pointer;
 }
 #entrees__4:hover .hidden, #dishes__4:hover .hidden, #desserts__4:hover .hidden {
   width: 80px;

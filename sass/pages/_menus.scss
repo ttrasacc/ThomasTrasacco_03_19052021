@@ -173,6 +173,7 @@
  #entrees__2, #dishes__2, #desserts__2 {
     animation: translateYAndFadeIn 2s;
     &:hover {
+        cursor: pointer;
         .hidden {
             width: 80px;
             transform: translate(0);
@@ -186,6 +187,7 @@
 #entrees__3, #dishes__3, #desserts__3 {
     animation: translateYAndFadeIn 2.5s;
     &:hover {
+        cursor: pointer;
         .hidden {
             width: 80px;
             transform: translate(0);
@@ -199,6 +201,7 @@
 #entrees__4, #dishes__4, #desserts__4 {
     animation: translateYAndFadeIn 3s;
     &:hover {
+        cursor: pointer;
         .hidden {
             width: 80px;
             transform: translate(0);
