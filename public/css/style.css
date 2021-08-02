@@ -213,8 +213,8 @@ p {
   align-items: center;
   justify-content: center;
   background: #f2f2f2;
-  height: 600px;
   width: 100%;
+  padding-top: 25px;
 }
 .intro .text-container {
   display: flex;
@@ -352,6 +352,11 @@ p {
   background-position: center;
 }
 
+@media all and (max-width: 800px) {
+  .rrr__image {
+    height: 300px;
+  }
+}
 .row {
   display: flex;
   justify-content: space-between;

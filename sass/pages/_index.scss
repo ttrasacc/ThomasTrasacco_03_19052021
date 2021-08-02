@@ -22,8 +22,8 @@
 .intro {
     @include column-center;
     background: $light-grey;
-    height: 600px;
     width: 100%;
+    padding-top: 25px;
     .text-container {
         @include column-center;
         margin-bottom: 25px;
@@ -138,7 +138,13 @@
         background-repeat: no-repeat;
         background-position: center;
     }
-   
+}
+
+@media all and (max-width: 800px)
+{
+    .rrr__image {
+        height: 300px;
+    }
 }
 
 .row {
@@ -221,3 +227,4 @@ label:hover {
 #id_4 {
     background-image: url('../../public/images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg');
 }
+
