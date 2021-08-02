@@ -24,6 +24,43 @@
     opacity: 1;
   }
 }
+@keyframes spinAndDisappear {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+    position: static;
+  }
+  50% {
+    opacity: 1;
+    position: static;
+  }
+  99% {
+    opacity: 1;
+    position: static;
+  }
+  100% {
+    transform: rotate(1440deg);
+    opacity: 0;
+    position: absolute;
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+  }
+  99% {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    position: static;
+  }
+}
 *,
 *::after,
 *::before {
@@ -41,6 +78,29 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.loader {
+  position: absolute;
+  justify-self: center;
+  align-self: center;
+  width: 100px;
+  height: 100px;
+  margin-top: 50px;
+  font-size: 10px;
+  text-indent: -9999em;
+  border-radius: 50%;
+  border: 1.1em solid rgba(217, 181, 211, 0.2);
+  border-left: 1.1em solid #e9c5f5;
+  animation: spinAndDisappear 4s linear forwards;
+}
+
 .content {
   outline: none;
   box-sizing: border-box;
@@ -51,6 +111,10 @@ html {
   width: 100%;
   max-width: 1920px;
   margin: auto;
+}
+
+.delay {
+  animation: appear 4s;
 }
 
 a {
@@ -64,6 +128,10 @@ a:visited {
 a:hover {
   text-decoration: underline;
   color: #9356DC;
+}
+
+footer ul li:hover {
+  cursor: pointer;
 }
 
 @font-face {
@@ -217,6 +285,13 @@ p {
   padding: 30px 50px 30px 50px;
   margin-bottom: 30px;
 }
+.scr-step:hover {
+  cursor: pointer;
+  background-color: rgba(147, 86, 220, 0.2);
+}
+.scr-step:hover .scr-icon {
+  color: #9356DC;
+}
 .scr-step__number {
   display: flex;
   justify-content: center;
@@ -226,12 +301,6 @@ p {
   width: 40px;
   color: whitesmoke;
   background-color: #9356DC;
-}
-.scr-step--colored {
-  background-color: rgba(147, 86, 220, 0.2);
-}
-.scr-step--colored .fa-store {
-  color: #9356DC;
 }
 .scr-step .relative-pos {
   position: relative;
@@ -269,6 +338,7 @@ p {
   box-shadow: 1px 1px 5px grey;
   width: 85%;
   margin-top: 25px;
+  position: relative;
 }
 
 .rrr__image {
@@ -299,6 +369,22 @@ p {
 }
 .row__favorite-icon {
   margin-right: 50px;
+}
+
+.bookmark-new {
+  position: absolute;
+  border-radius: 5px;
+  right: 25px;
+  top: 25px;
+  display: flex;
+  width: auto;
+  height: auto;
+  padding: 15px 25px 15px 25px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  color: #278870;
 }
 
 #favorite1, #favorite2, #favorite3, #favorite4 {
@@ -550,7 +636,7 @@ label:hover {
   cursor: pointer;
 }
 #entrees__1:hover .hidden, #dishes__1:hover .hidden, #desserts__1:hover .hidden {
-  width: 80px;
+  width: 100px;
   transform: translate(0);
 }
 #entrees__1:hover .hidden .icon, #dishes__1:hover .hidden .icon, #desserts__1:hover .hidden .icon {

@@ -3,14 +3,16 @@
     <head>
         <title>ohmyfood</title>
         <meta charset="utf-8" />
+        <!-- <meta name="viewport" content="width=device-width, inital-scale=1.0, user-scalable=no"> -->
         <link rel="stylesheet" href="./public/css/style.css" />
         <script src="https://kit.fontawesome.com/fc82092fd5.js" crossorigin="anonymous"></script>
     </head>
     <body class="page">
-        <div class="content">
-            <header class="page__header">
+        <div class="loader">loading...</div>
+        <main class="content delay">
+            <div class="page__header">
                 <img class="name-logo" src="public/images/ohmyfood.png" alt="logo_image">
-            </header>
+            </div>
             <div class="location">
                 <div class="location__logo">
                     <i class="fas fa-map-marker-alt"></i>
@@ -35,17 +37,17 @@
                 <div class="steps-container__regrouper">
                     <div class="scr-step">
                         <p class="scr-step__number">1</p>
-                        <i class="fas fa-mobile-alt fa-2x relative-pos"></i>
+                        <i class="fas fa-mobile-alt fa-2x relative-pos scr-icon"></i>
                         <p class="scr-step__label">Choisissez un restaurant</p>
                     </div>
                     <div class="scr-step">
                         <p class="scr-step__number">2</p>
-                        <i class="fas fa-bars fa-2x relative-pos"></i>
+                        <i class="fas fa-bars fa-2x relative-pos scr-icon"></i>
                         <p class="scr-step__label">Composez votre menu</p>
                     </div>
-                    <div class="scr-step scr-step--colored">
+                    <div class="scr-step">
                         <p class="scr-step__number">3</p>
-                        <i class="fas fa-store fa-2x relative-pos"></i>
+                        <i class="fas fa-store fa-2x relative-pos scr-icon"></i>
                         <p class="scr-step__label">Dégustez au restaurant</p>
                     </div>
                 </div>
@@ -55,7 +57,7 @@
                     <h1>Restaurants</h1>
                 </header>
                 <div class="restos-regrouper">
-                    <div class="restos-regrouper__resto">
+                    <article class="restos-regrouper__resto">
                         <a href="./menuLaPaletteDuGout.html">
                             <div class="rrr__image" id="id_1"></div>
                         </a>
@@ -72,8 +74,11 @@
                                 <label for="favorite1"><i class="fas fa-heart fa-3x checked"></i></label>
                             </div>
                         </div>
-                    </div>
-                    <div class="restos-regrouper__resto">
+                        <div class="bookmark-new">
+                            <p>Nouveau</p>
+                        </div>
+                    </article>
+                    <article class="restos-regrouper__resto">
                         <a href="./menuLaNoteEnchantee.html">
                             <div class="rrr__image" id="id_2"></div>
                         </a>
@@ -90,8 +95,11 @@
                                 <label for="favorite2"><i class="fas fa-heart fa-3x checked"></i></label>
                             </div>
                         </div>
-                    </div>
-                    <div class="restos-regrouper__resto">
+                        <div class="bookmark-new">
+                            <p>Nouveau</p>
+                        </div>
+                    </article>
+                    <article class="restos-regrouper__resto">
                         <a href="./menuALaFrancaise.html">
                             <div class="rrr__image" id="id_3"></div>
                         </a>
@@ -108,8 +116,8 @@
                                     <label for="favorite3"><i class="fas fa-heart fa-3x checked"></i></label>
                             </div>
                         </div>
-                    </div>
-                    <div class="restos-regrouper__resto">
+                    </article>
+                    <article class="restos-regrouper__resto">
                         <a href="./menuLeDeliceDesSens.html">
                             <div class="rrr__image" id="id_4"></div>
                         </a>
@@ -126,15 +134,15 @@
                                 <label for="favorite4"><i class="fas fa-heart fa-3x checked"></i></label>
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </section>
             <footer class="footer">
-                <div class="footer__header">
+                <section class="footer__header">
                     <h1 class="shrikhand">
                         ohmyfood
                     </h1>
-                </div>
+                </section>
                 <ul class="footer__list">
                     <li>
                         <p><i class="fas fa-utensils icon"></i> Proposer un restaurant</p>
@@ -150,6 +158,6 @@
                     </li>
                 </ul>
             </footer>
-        </div>
+        </main>
     </body>
 </html>

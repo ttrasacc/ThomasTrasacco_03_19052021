@@ -73,6 +73,13 @@
     background-color: $light-grey;
     padding: 30px 50px 30px 50px;
     margin-bottom: 30px;
+    &:hover {
+        cursor: pointer;
+        background-color: transparentize($primary-color, 0.8);
+        .scr-icon {
+            color: $primary-color;
+        }
+    }
     &__number {
         display: flex;
         justify-content: center;
@@ -82,12 +89,6 @@
         width: 40px;
         color: whitesmoke;
         background-color: $primary-color;
-    }
-    &--colored {
-        background-color: transparentize($primary-color, 0.8);
-        .fa-store {
-            color: $primary-color;
-        }
     }
     .relative-pos {
         position: relative;
@@ -122,6 +123,7 @@
         box-shadow: 1px 1px 5px grey;
         width: 85%;
         margin-top: 25px;
+        position: relative;
     } 
 }
 
@@ -153,6 +155,22 @@
     &__favorite-icon {
         margin-right: 50px;
     }
+}
+
+.bookmark-new {
+    position: absolute;
+    border-radius: 5px;
+    right: 25px;
+    top: 25px;
+    display: flex;
+    width: auto;
+    height: auto;
+    padding: 15px 25px 15px 25px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    background-color: $tertiary-color;
+    color: darken($tertiary-color, 40%);
 }
 
 #favorite1, #favorite2, #favorite3, #favorite4 {
