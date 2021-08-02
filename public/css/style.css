@@ -305,10 +305,13 @@ p {
   display: none;
 }
 #favorite1 ~ label .checked, #favorite2 ~ label .checked, #favorite3 ~ label .checked, #favorite4 ~ label .checked {
-  display: none;
+  position: absolute;
+  opacity: 0;
 }
 #favorite1:checked ~ label .checked, #favorite2:checked ~ label .checked, #favorite3:checked ~ label .checked, #favorite4:checked ~ label .checked {
-  display: inline-block;
+  position: static;
+  opacity: 1;
+  transition: opacity 1s linear;
   color: #ae71c8;
 }
 #favorite1:checked ~ label .not-checked, #favorite2:checked ~ label .not-checked, #favorite3:checked ~ label .not-checked, #favorite4:checked ~ label .not-checked {

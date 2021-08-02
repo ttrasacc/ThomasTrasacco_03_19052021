@@ -34,12 +34,15 @@
 @mixin checkbox-style {
     display: none;
     & ~ label .checked {
-        display: none;
+        position:absolute;
+        opacity: 0;
     }
     &:checked {
         & ~ label {
             .checked {
-                display: inline-block;
+                position: static;
+                opacity: 1;
+                transition: opacity 1s linear;
                 color: rgb(174,113,200);
             }
             .not-checked {
